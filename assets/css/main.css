@@ -128,29 +128,71 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
-		@media screen and (max-width: 1680px) {
+	.inputSearch {
+		background:rgb(44 44 95 / 0%) !important;
+		font-size: 40pt;
+		color: #ffffff !important;
+		font-weight: 600;
+		line-height: 1.65;
+	}
 
-			body, input, select, textarea {
-				font-size: 14pt;
-			}
+	.inputSearch::placeholder {
+		color: white !important;
+  		opacity: 1;
+	}
 
+	#container {
+		text-align: center;
+	}
+	
+	#text {
+		display: inline-block;
+		vertical-align: middle;
+		color: white;
+		letter-spacing: 2px;
+	}
+	
+	#cursor {
+		display: inline-block;
+		vertical-align: middle;
+		width: 3px;
+		height: 50px;
+		background-color: orange;
+		animation: blink .75s step-end infinite;
+	}
+	
+	@keyframes blink {
+		from, to { 
+			background-color: transparent 
+		}
+		50% { 
+			background-color: orange; 
+		}
+	}
+
+	@media screen and (max-width: 1680px) {
+
+		body, input, select, textarea {
+			font-size: 14pt;
 		}
 
-		@media screen and (max-width: 1280px) {
+	}
 
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
+	@media screen and (max-width: 1280px) {
 
+		body, input, select, textarea {
+			font-size: 12pt;
 		}
 
-		@media screen and (max-width: 360px) {
+	}
 
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
+	@media screen and (max-width: 360px) {
 
+		body, input, select, textarea {
+			font-size: 11pt;
 		}
+
+	}
 
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -162,14 +204,14 @@ input, select, textarea {
 		text-decoration: none;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #9bf1ff !important;
-		}
+	a:hover {
+		border-bottom-color: transparent;
+		color: #9bf1ff !important;
+	}
 
-		a:active {
-			color: #53e3fb !important;
-		}
+	a:active {
+		color: #53e3fb !important;
+	}
 
 	strong, b {
 		color: #ffffff;
